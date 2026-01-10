@@ -1,0 +1,1412 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+
+  <!-- Viewport: penting untuk mobile -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>INVITATION AND LAUNCHING</title>
+
+  <script>
+    const video10 = document.getElementById('storyVideo10');
+    const icon10 = document.getElementById('soundIcon10');
+
+    function toggleSound10() {
+      video10.muted = !video10.muted;
+
+      if (video10.muted) {
+        icon10.className = 'bi bi-volume-mute-fill';
+      } else {
+        icon10.className = 'bi bi-volume-up-fill';
+      }
+    }
+  </script>
+
+<!-- ========= SECTION 2 ========= -->
+<script>
+  let horizontalIndex = 0;
+
+  function goToSection3() {
+    const root = document.getElementById('horizontal-root');
+
+    root.scrollIntoView({
+      behavior: 'smooth'
+    });
+
+    setTimeout(() => {
+      horizontalIndex = 1;
+      root.style.transform = 'translateX(-100vw)';
+    }, 500);
+  }
+</script>
+
+<!-- ========= SECTION 3 ========= -->
+<script>
+  function goBackToSection2() {
+    document.getElementById('horizontal-root').style.transform =
+      'translateX(0)';
+  }
+
+  function goToSection4() {
+    document.getElementById('horizontal-root').style.transform =
+      'translateX(-200vw)';
+  }
+</script>
+
+<!-- ========= SECTION 4 ========= -->
+<script>
+  function goBackToSection3() {
+    document.getElementById('horizontal-root').style.transform =
+      'translateX(-100vw)';
+  }
+
+  function goToSection5() {
+    document.getElementById('horizontal-root').style.transform =
+      'translateX(-300vw)';
+  }
+</script>
+
+<!-- ========= SECTION 5 ========= -->
+<script>
+  function goBackToSection4() {
+    document.getElementById('horizontal-root').style.transform =
+      'translateX(-200vw)';
+  }
+
+  function goToSection6() {
+    document.getElementById('horizontal-root').style.transform =
+      'translateX(-400vw)';
+  }
+</script>
+
+<!-- ========= SECTION 6 ========= -->
+<script>
+  function goBackToSection5() {
+    document.getElementById('horizontal-root').style.transform =
+      'translateX(-300vw)';
+  }
+
+  function goToSection7() {
+    document.getElementById('horizontal-root').style.transform =
+      'translateX(-500vw)';
+  }
+</script>
+
+<!-- ========= SECTION 7 ========= -->
+<script>
+  function goBackToSection6() {
+    document.getElementById('horizontal-root').style.transform =
+      'translateX(-400vw)';
+  }
+
+  function goToSection8() {
+    document.getElementById('horizontal-root').style.transform =
+      'translateX(-600vw)';
+  }
+</script>
+
+<!-- ========= SECTION 8 ========= -->
+<script>
+  function goBackToSection7() {
+    document.getElementById('horizontal-root').style.transform =
+      'translateX(-500vw)';
+  }
+
+  function goToSection9() {
+    document.getElementById('horizontal-root').style.transform =
+      'translateX(-700vw)';
+  }
+</script>
+
+<!-- ========= SECTION 9 ========= -->
+<script>
+  function goBackToSection8() {
+    document.getElementById('horizontal-root').style.transform =
+      'translateX(-600vw)';
+  }
+
+  function goToSection10() {
+    document.getElementById('horizontal-root').style.transform =
+      'translateX(-800vw)';
+  }
+</script>
+
+<!-- ========= SECTION 10 ========= -->
+<script>
+  function goBackToSection9() {
+    document.getElementById('horizontal-root').style.transform =
+      'translateX(-700vw)';
+  }
+</script>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Bootstrap CSS -->
+  <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet">
+
+  <!-- Google Font: Poppins -->
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" 
+    rel="stylesheet">
+
+  <!-- Favicon PNG -->
+  <link rel="icon" type="image/png" href="assets/logoo.png">
+
+  <!-- Icon Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <style>
+    :root {
+      --yellow: #DDD33A;
+      --blue: #081644;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    /* Wrapper khusus mobile */
+    .mobile-wrapper {
+      max-width: 430px; /* ukuran mobile (iPhone Pro Max aman) */
+      min-height: 100vh;
+      margin: auto;
+      background-color: #ffffff;
+      box-shadow: 0 0 20px rgba(0,0,0,0.08);
+      overflow-x: hidden;
+    }
+
+    .section-hero {
+      min-height: 100vh;
+      padding: 40px 20px;
+      background: linear-gradient(180deg, #ffffff, #f8f8f8);
+    }
+
+    .hero-logo {
+      width: 200px;
+      height: auto;
+    }
+
+    .hero-title {
+      font-size: 18px;
+      font-weight: 400;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .hero-subtitle {
+      font-size: 14px;
+      letter-spacing: 1px;
+      color: #777;
+    }
+
+    .section-1 {
+      cursor: pointer;
+    }
+
+    .tap-hint {
+      font-size: 12px;
+      letter-spacing: 1px;
+      text-decoration: none;
+    }
+
+    .tap-hint:hover {
+      opacity: 1;
+    }
+
+    .section-full {
+      min-height: 100vh;
+      width: 100%;
+    }
+
+    .btn {
+      background-color: #081644 !important;
+      color: white !important;
+      padding: 15 15 !important;
+    }
+
+    .section-page {
+      min-height: 100vh;
+      padding: 40px 20px;
+      background: #fff;
+      scroll-snap-align: start;
+    }
+
+    /* SLIDER */
+    .slider-container {
+      width: 100%;
+      overflow: hidden;
+      border-radius: 20px;
+      touch-action: pan-y;
+    }
+
+    .slider-track {
+      display: flex;
+      transition: transform 0.4s ease;
+    }
+
+    .slide {
+      min-width: 100%;
+      aspect-ratio: 4 / 3;
+      overflow: hidden;
+      border-radius: 20px;
+      background: #eee;
+    }
+
+    .slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* DOTS */
+    .slider-dots {
+      display: flex;
+      justify-content: center;
+      margin-top: 12px;
+      gap: 8px;
+    }
+
+    .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--blue);
+      opacity: 0.3;
+    }
+
+    .dot.active {
+      background: var(--yellow);
+      opacity: 1;
+    }
+
+    .section-header {
+      text-align: center;
+    }
+
+    .section-logo {
+      width: 70px;
+    }
+
+    .section-title {
+      font-size: 18px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      color: var(--blue);
+    }
+
+    .section-subtitle {
+      font-size: 12px;
+      letter-spacing: 1px;
+      color: #666;
+    }
+
+    .section-quote {
+      font-size: 14px;
+      font-style: italic;
+      text-align: center;
+      color: var(--blue);
+      opacity: 0.85;
+      padding: 0 10px;
+    }
+
+    .section-next {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .next-btn {
+      background-color: var(--blue);
+      color: white;
+      border: none;
+      padding: 12px 28px;
+      border-radius: 999px; /* kapsul */
+      font-size: 14px;
+      letter-spacing: 1px;
+      transition: 0.25s ease;
+    }
+
+    .next-btn:active {
+      transform: translateX(6px);
+      opacity: 0.85;
+    }
+
+    .section-next {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+      gap: 12px;
+    }
+
+    .back-btn {
+      background: transparent;
+      color: var(--blue);
+      border: 1.5px solid var(--blue);
+      padding: 12px 24px;
+      border-radius: 999px;
+      font-size: 14px;
+      letter-spacing: 1px;
+      transition: 0.25s ease;
+    }
+
+    .back-btn:active {
+      transform: translateX(-6px);
+      opacity: 0.85;
+    }
+
+    .horizontal-wrapper {
+      display: flex;
+      width: fit-content; 
+      height: 100vh;
+      overflow: hidden;
+      transition: transform 0.5s ease;
+    }
+
+    .horizontal-page {
+      width: 100vw;
+      height: 100vh;
+      flex-shrink: 0;
+    }
+
+/* QUOTE CARD */
+.quote-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.quote-card {
+  background: #ffffff;
+  border-radius: 22px;
+  padding: 32px 24px 26px;
+  max-width: 520px;
+  width: 100%;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  position: relative;
+}
+
+/* ICON BULAT */
+.quote-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-30%, -30%);
+  width: 44px;
+  height: 44px;
+  background: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--blue);
+  font-size: 20px;
+}
+
+/* LABEL */
+.quote-label {
+  font-size: 11px;
+  letter-spacing: 1.4px;
+  color: #888;
+  margin-bottom: 12px;
+}
+
+/* TEXT */
+.quote-text {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.7;
+  color: var(--blue);
+  margin-bottom: 22px;
+}
+
+/* SOURCE */
+.quote-source {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #777;
+}
+
+.music-player {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 64px;
+  height: 64px;
+  z-index: 9999;
+  cursor: pointer;
+}
+
+.vinyl {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+}
+
+/* Muter */
+.rotate {
+  animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+/* Icon volume */
+.music-icon {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.music-icon i {
+  color: #fff;
+  font-size: 22px;
+  text-shadow: 0 3px 8px rgba(0,0,0,0.8);
+}
+
+/* GRID UTAMA */
+.section7-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* BARIS */
+.section7-grid > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+/* CARD */
+.info-card {
+  background: #fff;
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.card-title {
+  font-weight: 700;
+  color: var(--blue);
+  margin-bottom: 8px;
+}
+
+.card-text {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* TEXT SLIDER */
+.text-slider {
+  overflow: hidden;
+}
+
+.text-track {
+  display: flex;
+  transition: transform 0.4s ease;
+}
+
+.text-slide {
+  min-width: 100%;
+  font-size: 14px;
+  color: var(--blue);
+  text-align: center;
+}
+
+/* BARIS KOSONG BIAR ADA SPACE */
+.row-2,
+.row-3 {
+  min-height: 60px;
+}
+
+/* CARD UTAMA */
+.image-card {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3; /* FIX 4:3 */
+  overflow: hidden;
+  border-radius: 18px;
+}
+
+/* FOTO AUTO MENYESUAIKAN */
+.image-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* foto ukuran apapun aman */
+  display: block;
+}
+
+/* OVERLAY GRADASI */
+.image-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to left,
+    rgba(0, 0, 0, 0.55),
+    rgba(0, 0, 0, 0)
+  );
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px;
+}
+
+/* TEKS */
+.overlay-text {
+  max-width: 70%; /* batas teks: kanan ke tengah */
+  text-align: right;
+  color: #fff;
+}
+
+/* JUDUL */
+.overlay-text h5 {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.carousel-text {
+  font-size: 10px;
+  color: #444;
+  max-width: 420px;
+  margin: 10px;
+}
+
+.carousel-indicators {
+  position: static;
+  margin-top: 24px;
+  margin-bottom: -5px;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #bbb;
+}
+
+.carousel-indicators .active {
+  background-color: #222;
+}
+
+.carousel {
+  background-color: white !important;
+}
+
+.video-wrapper {
+  width: 100%;
+}
+
+.video-box {
+  width: 85%;
+  max-width: 300px;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+}
+
+.video-box video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 18px;
+}
+  </style>
+</head>
+
+<body>
+  <audio id="bg-music" loop>
+    <source src="assets/music.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="music-player" onclick="toggleMusic()">
+    <img src="assets/vinyl.png" class="vinyl" id="vinyl">
+
+    <div class="music-icon">
+      <i class="bi bi-volume-up-fill" id="musicIcon"></i>
+    </div>
+  </div>
+
+  <script>
+    const music = document.getElementById("bg-music");
+    const vinyl = document.getElementById("vinyl");
+    const icon = document.getElementById("musicIcon");
+
+    let isPlaying = false;
+
+    // Auto play setelah user klik layar pertama kali
+    document.addEventListener("click", function () {
+      if (!isPlaying) {
+        music.play().then(() => {
+          isPlaying = true;
+          vinyl.classList.add("rotate");
+        }).catch(() => {});
+      }
+    }, { once: true });
+
+    function toggleMusic() {
+      if (isPlaying) {
+        music.pause();
+        vinyl.classList.remove("rotate");
+        icon.classList.replace("bi-volume-up-fill", "bi-volume-mute-fill");
+      } else {
+        music.play();
+        vinyl.classList.add("rotate");
+        icon.classList.replace("bi-volume-mute-fill", "bi-volume-up-fill");
+      }
+      isPlaying = !isPlaying;
+    }
+  </script>
+
+  <section class="section-1 section-hero d-flex align-items-center justify-content-center text-center">
+    <div>
+      <!-- Judul -->
+      <h1 class="hero-title">
+        INVITATION & LAUNCHING
+      </h1>
+
+      <img 
+        src="assets/logoo.png" 
+        alt="Logo Undangan" 
+        class="hero-logo mb-4 mt-4">
+
+      <!-- Subjudul (opsional) -->
+      <p class="hero-subtitle mt-3">
+        16 - 18 Januari 2026
+      </p>
+
+      <!-- Hint -->
+      <a href="#section-2" class="next-btn tap-hint mt-4 d-inline-block">
+        Lihat Selengkapnya
+      </a>
+    </div>
+  </section>
+
+  <div id="horizontal-root" class="horizontal-wrapper">
+    <section id="section-2" class="section-page horizontal-page">
+      <!-- Header -->
+      <div class="section-header text-center mb-4">
+        <img src="assets/logoo.png" alt="Logo" class="section-logo mb-3">
+
+        <h2 class="section-title mb-4 mt-4">
+          SEBELUM BELI RUMAH SUDAH KEPIKIRAN SOAL INI?
+        </h2>
+      </div>
+
+      <!-- SLIDER -->
+      <div class="slider-container">
+        <div class="slider-track slider-track-2">
+
+          <div class="slide">
+            <img src="assets/slide1.jpg" alt="Slide 1">
+          </div>
+
+          <div class="slide">
+            <img src="assets/slide2.jpg" alt="Slide 2">
+          </div>
+
+          <div class="slide">
+            <img src="assets/slide3.jpg" alt="Slide 3">
+          </div>
+
+        </div>
+      </div>
+
+      <!-- DOTS -->
+      <div class="slider-dots">
+        <span class="dot dot-2 active"></span>
+        <span class="dot dot-2"></span>
+        <span class="dot dot-2"></span>
+      </div>
+
+      <!-- Button Navigation -->
+      <div class="section-next gap-3">
+        <button class="back-btn" onclick="goBackToSection1()">
+          ← Kembali
+        </button>
+
+        <button class="next-btn" onclick="goToSection3()">
+          Selanjutnya →
+        </button>
+      </div>
+    </section>
+
+    <section id="section-3" class="section-page horizontal-page">
+      <!-- Header -->
+      <div class="section-header text-center mb-4">
+        <img src="assets/logoo.png" alt="Logo" class="section-logo mb-3">
+
+        <h2 class="section-title mb-4 mt-4">
+          EMANG ADA RUMAH YANG GAK NYAMAN BUAT TINGGAL?
+        </h2>
+      </div>
+
+      <!-- SLIDER -->
+      <div class="slider-container">
+        <div class="slider-track slider-track-3">
+
+          <div class="slide">
+            <img src="assets/slide4.jpg" alt="Slide 1">
+          </div>
+
+          <div class="slide">
+            <img src="assets/slide5.jpg" alt="Slide 2">
+          </div>
+
+          <div class="slide">
+            <img src="assets/slide17.jpg" alt="Slide 3">
+          </div>
+
+        </div>
+      </div>
+
+      <!-- DOTS -->
+      <div class="slider-dots">
+        <span class="dot dot-3 active"></span>
+        <span class="dot dot-3"></span>
+        <span class="dot dot-3"></span>
+      </div>
+
+      <!-- Button Navigation -->
+      <div class="section-next gap-3">
+        <!-- Secondary -->
+        <button class="back-btn" onclick="goBackToSection2()">
+          ← Kembali
+        </button>
+
+        <!-- Primary -->
+        <button class="next-btn" onclick="goToSection4()">
+          Selanjutnya →
+        </button>
+      </div>
+    </section>
+
+    <section id="section-4" class="section-page horizontal-page">
+      <!-- Header -->
+      <div class="section-header text-center mb-4">
+        <img src="assets/logoo.png" alt="Logo" class="section-logo mb-3">
+
+        <h2 class="section-title mb-4 mt-4">
+          APAKAH KARENA BANGUNAN DARI RUMAHNYA GAK BAGUS?
+        </h2>
+      </div>
+
+      <!-- SLIDER -->
+      <div class="slider-container">
+        <div class="slider-track slider-track-4">
+
+          <div class="slide">
+            <img src="assets/slide12.jpg" alt="Slide 1">
+          </div>
+
+          <div class="slide">
+            <img src="assets/slide13.jpg" alt="Slide 2">
+          </div>
+
+          <div class="slide">
+            <img src="assets/slide14.jpg" alt="Slide 3">
+          </div>
+
+        </div>
+      </div>
+
+      <!-- DOTS -->
+      <div class="slider-dots">
+        <span class="dot dot-4 active"></span>
+        <span class="dot dot-4"></span>
+        <span class="dot dot-4"></span>
+      </div>
+
+      <!-- BUTTONS -->
+      <div class="section-next">
+        <button class="back-btn" onclick="goBackToSection3()">
+          ← Kembali
+        </button>
+
+        <!-- kalau nanti ada section 5 -->
+        <button class="next-btn" onclick="goToSection5()">
+          Selanjutnya →
+        </button>
+      </div>
+    </section>
+
+    <section id="section-5" class="section-page horizontal-page">
+      <!-- Header -->
+      <div class="section-header text-center mb-4">
+        <img src="assets/logoo.png" alt="Logo" class="section-logo mb-3">
+
+        <h2 class="section-title mb-4 mt-4">
+          APA KARENA RUMAHNYA JAUH?
+        </h2>
+      </div>
+
+      <!-- SLIDER -->
+      <div class="slider-container">
+        <div class="slider-track slider-track-5">
+
+          <div class="slide">
+            <img src="assets/slide14.jpg" alt="Slide 1">
+          </div>
+
+          <div class="slide">
+            <img src="assets/slide18.jpg" alt="Slide 2">
+          </div>
+
+          <div class="slide">
+            <img src="assets/slide11.jpg" alt="Slide 3">
+          </div>
+
+        </div>
+      </div>
+
+      <!-- DOTS -->
+      <div class="slider-dots">
+        <span class="dot dot-5 active"></span>
+        <span class="dot dot-5"></span>
+        <span class="dot dot-5"></span>
+      </div>
+
+      <!-- Quote -->
+      <div class="quote-wrapper mt-4">
+        <div class="quote-card position-relative">
+
+          <!-- icon quote -->
+          <div class="quote-icon">
+            <i class="bi bi-quote"></i>
+          </div>
+
+          <div class="quote-label">
+            KATA BELIAU
+          </div>
+
+          <p class="quote-text">
+            “Rumah sebelumnya malah lebih dekat ke tempat kerjanya dan lebih dekat ke pusat kota.”
+          </p>
+
+          <div class="quote-source">
+            <i class="bi bi-person-circle"></i>
+            <span style="font-size: 12px !important;">Konsumen Purikota Kriya Maha Citra Residence</span>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- BUTTONS -->
+      <div class="section-next">
+        <button class="back-btn" onclick="goBackToSection4()">
+          ← Kembali
+        </button>
+
+        <button class="next-btn" onclick="goToSection6()">
+          Selanjutnya →
+        </button>
+      </div>
+    </section>
+
+    <section id="section-6" class="section-page horizontal-page">
+      <!-- Header -->
+      <div class="section-header text-center mb-4">
+        <img src="assets/logoo.png" alt="Logo" class="section-logo mb-3">
+
+        <h2 class="section-title mb-4 mt-4">
+          TERUS APA YANG BIKIN GAK BETAH?
+        </h2>
+      </div>
+
+      <!-- SLIDER -->
+      <div class="slider-container">
+        <div class="slider-track slider-track-6">
+
+          <div class="slide">
+            <img src="assets/slide7.jpg" alt="Slide 1">
+          </div>
+
+          <div class="slide">
+            <img src="assets/slide8.jpg" alt="Slide 2">
+          </div>
+
+          <div class="slide">
+            <img src="assets/slide18.jpg" alt="Slide 3">
+          </div>
+
+        </div>
+      </div>
+
+      <!-- DOTS -->
+      <div class="slider-dots">
+        <span class="dot dot-6 active"></span>
+        <span class="dot dot-6"></span>
+        <span class="dot dot-6"></span>
+      </div>
+
+      <!-- QUOTE -->
+      <div class="d-flex justify-content-center mt-2">
+        <div class="px-3 px-md-4 py-4 text-center" style="max-width: 620px;">
+
+          <!-- statement text -->
+          <p class="fw-bold" style="
+            font-size: 20px;
+            text-transform: uppercase;
+            color: var(--blue);
+          ">
+            Yang Paling Penting
+            <span class="d-block fw-bolder" style="font-size: 20px; margin-bottom: -50px;">
+              Ada 3 Hal Ini
+            </span>
+          </p>
+
+        </div>
+      </div>
+
+      <!-- BUTTON NAVIGATION -->
+      <div class="section-next">
+        <button class="back-btn" onclick="goBackToSection5()">
+          ← Kembali
+        </button>
+
+        <button class="next-btn" onclick="goToSection7()">
+          Selanjutnya →
+        </button>
+      </div>
+    </section>
+
+    <section id="section-7" class="section-page horizontal-page">
+
+      <!-- Header -->
+      <div class="section-header text-center mb-4">
+        <img src="assets/logoo.png" alt="Logo" class="section-logo mb-3">
+
+        <h2 class="section-title mb-4 mt-4">
+          APA SAJA TIGA HAL PENTING YANG PERLU DIPERHATIKAN?
+        </h2>
+      </div>
+
+<div class="slider-container">
+  <div class="slider-track slider-track-7">
+
+    <div class="slide">
+      <img src="assets/1.jpg" alt="Slide 1">
+    </div>
+
+    <div class="slide">
+      <img src="assets/2.jpg" alt="Slide 2">
+    </div>
+
+    <div class="slide">
+      <img src="assets/3.jpg" alt="Slide 3">
+    </div>
+
+  </div>
+</div>
+
+<!-- DOTS -->
+<div class="slider-dots">
+  <span class="dot dot-7 active"></span>
+  <span class="dot dot-7"></span>
+  <span class="dot dot-7"></span>
+</div>
+
+      <!-- BUTTON NAVIGATION -->
+      <div class="section-next">
+        <button class="back-btn" onclick="goBackToSection6()">
+          ← Kembali
+        </button>
+
+        <button class="next-btn" onclick="goToSection8()">
+          Selanjutnya →
+        </button>
+      </div>
+
+    </section>
+
+    <section id="section-8" class="section-page horizontal-page">
+      <!-- Header -->
+      <div class="section-header text-center mb-4">
+        <img src="assets/logoo.png" alt="Logo" class="section-logo mb-3">
+
+        <h2 class="section-title mb-4 mt-4">
+          KENAPA SAYA COCOK DI RUMAH YANG BARU SEKARANG?
+        </h2>
+      </div>
+
+      <!-- SLIDER -->
+      <div class="slider-container">
+        <div class="slider-track slider-track-8">
+
+          <div class="slide">
+            <img src="assets/slide6.jpg" alt="Slide 1">
+          </div>
+
+          <div class="slide">
+            <img src="assets/slide5.jpg" alt="Slide 2">
+          </div>
+
+          <div class="slide">
+            <img src="assets/slide13.jpg" alt="Slide 3">
+          </div>
+
+        </div>
+      </div>
+
+      <!-- DOTS -->
+      <div class="slider-dots">
+        <span class="dot dot-8 active"></span>
+        <span class="dot dot-8"></span>
+        <span class="dot dot-8"></span>
+      </div>
+
+      <!-- BUTTON NAVIGATION (POSISI KONSISTEN) -->
+      <div class="section-next">
+        <button class="back-btn" onclick="goBackToSection7()">
+          ← Kembali
+        </button>
+
+        <button class="next-btn" onclick="goToSection9()">
+          Selanjutnya →
+        </button>
+      </div>
+    </section>
+
+    <section id="section-9" class="section-page horizontal-page">
+      <!-- Header -->
+      <div class="section-header text-center mb-4">
+        <img src="assets/logoo.png" alt="Logo" class="section-logo mb-3">
+
+        <h2 class="section-title mb-4 mt-4">
+          HAYU.......!
+          <br>
+          <br>
+          RASAKAN BEDANYA TINGGAL DI LINGKUNGAN YANG TEPAT, BERSAMA ANAK MUDA BANDUNG LAINNYA
+        </h2>
+      </div>
+
+      <!-- SLIDER -->
+      <div class="slider-container">
+        <div class="slider-track slider-track-9">
+
+          <div class="slide">
+            <img src="assets/slide10.jpg" alt="Slide 1">
+          </div>
+
+          <div class="slide">
+            <img src="assets/slide5.jpg" alt="Slide 2">
+          </div>
+
+          <div class="slide">
+            <img src="assets/slide15.jpg" alt="Slide 3">
+          </div>
+
+        </div>
+      </div>
+
+      <!-- DOTS -->
+      <div class="slider-dots">
+        <span class="dot dot-9 active"></span>
+        <span class="dot dot-9"></span>
+        <span class="dot dot-9"></span>
+      </div>
+
+      <!-- BUTTON NAVIGATION -->
+      <div class="section-next">
+        <button class="back-btn" onclick="goBackToSection8()">
+          ← Kembali
+        </button>
+
+        <button class="next-btn" onclick="goToSection10()">
+          Selanjutnya →
+        </button>
+      </div>
+    </section>
+
+    <section id="section-10" class="section-page horizontal-page">
+      <!-- Header -->
+      <div class="section-header text-center mb-4">
+        <img src="assets/logoo.png" alt="Logo" class="section-logo mb-3">
+
+        <h6 class="section-title mb-1 mt-1">
+          DARI KISAH ANAK MUDA DI BANDUNG, KAMI JADI TAU RUMAH YANG BANYAK ANAK MUDA IMPIKAN
+        </h6>
+      </div>
+
+    <!-- VIDEO WRAPPER -->
+    <div class="video-wrapper d-flex justify-content-center mt-4">
+      <div class="video-box position-relative">
+
+        <video
+          id="storyVideo10"
+          src="assets/video.mp4"
+          autoplay
+          muted
+          loop
+          playsinline
+        ></video>
+      </div>
+    </div>
+
+      <!-- BUTTON NAVIGATION -->
+      <div class="section-next">
+        <button class="back-btn" onclick="goBackToSection9()">
+          ← Kembali
+        </button>
+      </div>
+    </section>
+
+  </div>
+</body>
+
+<script>
+  const track2 = document.querySelector('.slider-track-2');
+  const dots2 = document.querySelectorAll('.dot-2');
+  let index2 = 0;
+  let startX2 = 0;
+
+  function updateSlider2() {
+    track2.style.transform = `translateX(-${index2 * 100}%)`;
+    dots2.forEach(dot => dot.classList.remove('active'));
+    dots2[index2].classList.add('active');
+  }
+
+  track2.addEventListener('touchstart', e => {
+    startX2 = e.touches[0].clientX;
+  }, { passive: true });
+
+  track2.addEventListener('touchend', e => {
+    const endX = e.changedTouches[0].clientX;
+    const diff = startX2 - endX;
+
+    if (diff > 50 && index2 < dots2.length - 1) {
+      index2++;
+    } else if (diff < -50 && index2 > 0) {
+      index2--;
+    }
+
+    updateSlider2();
+  });
+</script>
+
+<script>
+  const track3 = document.querySelector('.slider-track-3');
+  const dots3 = document.querySelectorAll('.dot-3');
+  let index3 = 0;
+  let startX3 = 0;
+
+  function updateSlider3() {
+    track3.style.transform = `translateX(-${index3 * 100}%)`;
+    dots3.forEach(dot => dot.classList.remove('active'));
+    dots3[index3].classList.add('active');
+  }
+
+  track3.addEventListener('touchstart', e => {
+    startX3 = e.touches[0].clientX;
+  }, { passive: true });
+
+  track3.addEventListener('touchend', e => {
+    const endX = e.changedTouches[0].clientX;
+    const diff = startX3 - endX;
+
+    if (diff > 50 && index3 < dots3.length - 1) {
+      index3++;
+    } else if (diff < -50 && index3 > 0) {
+      index3--;
+    }
+
+    updateSlider3();
+  });
+</script>
+
+<script>
+  const track4 = document.querySelector('.slider-track-4');
+  const dots4 = document.querySelectorAll('.dot-4');
+  let index4 = 0;
+  let startX4 = 0;
+
+  function updateSlider4() {
+    track4.style.transform = `translateX(-${index4 * 100}%)`;
+    dots4.forEach(dot => dot.classList.remove('active'));
+    dots4[index4].classList.add('active');
+  }
+
+  track4.addEventListener('touchstart', e => {
+    startX4 = e.touches[0].clientX;
+  }, { passive: true });
+
+  track4.addEventListener('touchend', e => {
+    const endX = e.changedTouches[0].clientX;
+    const diff = startX4 - endX;
+
+    if (diff > 50 && index4 < dots4.length - 1) {
+      index4++;
+    } else if (diff < -50 && index4 > 0) {
+      index4--;
+    }
+
+    updateSlider4();
+  });
+</script>
+
+<script>
+  const track5 = document.querySelector('.slider-track-5');
+  const dots5 = document.querySelectorAll('.dot-5');
+  let index5 = 0;
+  let startX5 = 0;
+
+  function updateSlider5() {
+    track5.style.transform = `translateX(-${index5 * 100}%)`;
+    dots5.forEach(dot => dot.classList.remove('active'));
+    dots5[index5].classList.add('active');
+  }
+
+  track5.addEventListener('touchstart', e => {
+    startX5 = e.touches[0].clientX;
+  }, { passive: true });
+
+  track5.addEventListener('touchend', e => {
+    const endX = e.changedTouches[0].clientX;
+    const diff = startX5 - endX;
+
+    if (diff > 50 && index5 < dots5.length - 1) {
+      index5++;
+    } else if (diff < -50 && index5 > 0) {
+      index5--;
+    }
+
+    updateSlider5();
+  });
+</script>
+
+<script>
+  const track6 = document.querySelector('.slider-track-6');
+  const dots6 = document.querySelectorAll('.dot-6');
+  let index6 = 0;
+  let startX6 = 0;
+
+  function updateSlider6() {
+    track6.style.transform = `translateX(-${index6 * 100}%)`;
+    dots6.forEach(dot => dot.classList.remove('active'));
+    dots6[index6].classList.add('active');
+  }
+
+  track6.addEventListener('touchstart', e => {
+    startX6 = e.touches[0].clientX;
+  }, { passive: true });
+
+  track6.addEventListener('touchend', e => {
+    const endX = e.changedTouches[0].clientX;
+    const diff = startX6 - endX;
+
+    if (diff > 50 && index6 < dots6.length - 1) {
+      index6++;
+    } else if (diff < -50 && index6 > 0) {
+      index6--;
+    }
+
+    updateSlider6();
+  });
+</script>
+
+<script>
+  const track7 = document.querySelector('.slider-track-7');
+  const dots7 = document.querySelectorAll('.dot-7');
+  let index7 = 0;
+  let startX7 = 0;
+
+  function updateSlider7() {
+    track7.style.transform = `translateX(-${index7 * 100}%)`;
+    dots7.forEach(dot => dot.classList.remove('active'));
+    dots7[index7].classList.add('active');
+  }
+
+  track7.addEventListener('touchstart', e => {
+    startX7 = e.touches[0].clientX;
+  }, { passive: true });
+
+  track7.addEventListener('touchend', e => {
+    const endX = e.changedTouches[0].clientX;
+    const diff = startX7 - endX;
+
+    if (diff > 50 && index7 < dots7.length - 1) {
+      index7++;
+    } else if (diff < -50 && index7 > 0) {
+      index7--;
+    }
+
+    updateSlider7();
+  });
+</script>
+
+<script>
+  const track8 = document.querySelector('.slider-track-8');
+  const dots8 = document.querySelectorAll('.dot-8');
+  let index8 = 0;
+  let startX8 = 0;
+
+  function updateSlider8() {
+    track8.style.transform = `translateX(-${index8 * 100}%)`;
+    dots8.forEach(dot => dot.classList.remove('active'));
+    dots8[index8].classList.add('active');
+  }
+
+  track8.addEventListener('touchstart', e => {
+    startX8 = e.touches[0].clientX;
+  }, { passive: true });
+
+  track8.addEventListener('touchend', e => {
+    const endX = e.changedTouches[0].clientX;
+    const diff = startX8 - endX;
+
+    if (diff > 50 && index8 < dots8.length - 1) {
+      index8++;
+    } else if (diff < -50 && index8 > 0) {
+      index8--;
+    }
+
+    updateSlider8();
+  });
+</script>
+
+<script>
+  const track9 = document.querySelector('.slider-track-9');
+  const dots9 = document.querySelectorAll('.dot-9');
+  let index9 = 0;
+  let startX9 = 0;
+
+  function updateSlider9() {
+    track9.style.transform = `translateX(-${index9 * 100}%)`;
+    dots9.forEach(dot => dot.classList.remove('active'));
+    dots9[index9].classList.add('active');
+  }
+
+  track9.addEventListener('touchstart', e => {
+    startX9 = e.touches[0].clientX;
+  }, { passive: true });
+
+  track9.addEventListener('touchend', e => {
+    const endX = e.changedTouches[0].clientX;
+    const diff = startX9 - endX;
+
+    if (diff > 50 && index9 < dots9.length - 1) {
+      index9++;
+    } else if (diff < -50 && index9 > 0) {
+      index9--;
+    }
+
+    updateSlider9();
+  });
+</script>
